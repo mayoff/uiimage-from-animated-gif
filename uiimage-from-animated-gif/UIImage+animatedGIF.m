@@ -9,7 +9,7 @@
 
 @implementation UIImage (animatedGIF)
 
-static UIImage *imageWithAnimatedGIFImageSource(CGImageSourceRef source, NSTimeInterval duration) {
+static UIImage *animatedImageWithAnimatedGIFImageSource(CGImageSourceRef source, NSTimeInterval duration) {
     if (!source)
         return nil;
     
@@ -26,18 +26,18 @@ static UIImage *imageWithAnimatedGIFImageSource(CGImageSourceRef source, NSTimeI
     return [UIImage animatedImageWithImages:images duration:duration];
 }
 
-static UIImage *imageWithAnimatedGIFReleasingImageSource(CGImageSourceRef source, NSTimeInterval duration) {
-    UIImage *image = imageWithAnimatedGIFImageSource(source, duration);
+static UIImage *animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceRef source, NSTimeInterval duration) {
+    UIImage *image = animatedImageWithAnimatedGIFImageSource(source, duration);
     CFRelease(source);
     return image;
 }
 
-+ (UIImage *)imageWithAnimatedGIFData:(NSData *)data duration:(NSTimeInterval)duration {
-    return imageWithAnimatedGIFReleasingImageSource(CGImageSourceCreateWithData(toCF data, NULL), duration);
++ (UIImage *)animatedImageWithAnimatedGIFData:(NSData *)data duration:(NSTimeInterval)duration {
+    return animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceCreateWithData(toCF data, NULL), duration);
 }
 
-+ (UIImage *)imageWithAnimatedGIFURL:(NSURL *)url duration:(NSTimeInterval)duration {
-    return imageWithAnimatedGIFReleasingImageSource(CGImageSourceCreateWithURL(toCF url, NULL), duration);
++ (UIImage *)animatedImageWithAnimatedGIFURL:(NSURL *)url duration:(NSTimeInterval)duration {
+    return animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceCreateWithURL(toCF url, NULL), duration);
 }
 
 @end
