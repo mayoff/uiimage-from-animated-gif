@@ -16,6 +16,8 @@
 		31C640F314D3AF2B007FB1F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C640F214D3AF2B007FB1F0 /* ViewController.m */; };
 		31C640F614D3AF2B007FB1F0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C640F414D3AF2B007FB1F0 /* ViewController.xib */; };
 		31C640FE14D3AFB1007FB1F0 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C640FD14D3AFB1007FB1F0 /* UIImage+animatedGIF.m */; };
+		31C6410414D3B277007FB1F0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C6410314D3B277007FB1F0 /* ImageIO.framework */; };
+		31C6410714D3B731007FB1F0 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 31C6410614D3B731007FB1F0 /* test.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		31C640F514D3AF2B007FB1F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		31C640FC14D3AFB1007FB1F0 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		31C640FD14D3AFB1007FB1F0 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		31C6410314D3B277007FB1F0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		31C6410614D3B731007FB1F0 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C6410414D3B277007FB1F0 /* ImageIO.framework in Frameworks */,
 				31C640E014D3AF2B007FB1F0 /* UIKit.framework in Frameworks */,
 				31C640E214D3AF2B007FB1F0 /* Foundation.framework in Frameworks */,
 				31C640E414D3AF2B007FB1F0 /* CoreGraphics.framework in Frameworks */,
@@ -53,6 +58,7 @@
 		31C640D014D3AF2B007FB1F0 = {
 			isa = PBXGroup;
 			children = (
+				31C6410314D3B277007FB1F0 /* ImageIO.framework */,
 				31C640E514D3AF2B007FB1F0 /* uiimage-from-animated-gif */,
 				31C640DE14D3AF2B007FB1F0 /* Frameworks */,
 				31C640DC14D3AF2B007FB1F0 /* Products */,
@@ -80,6 +86,7 @@
 		31C640E514D3AF2B007FB1F0 /* uiimage-from-animated-gif */ = {
 			isa = PBXGroup;
 			children = (
+				31C6410614D3B731007FB1F0 /* test.gif */,
 				31C640EE14D3AF2B007FB1F0 /* AppDelegate.h */,
 				31C640EF14D3AF2B007FB1F0 /* AppDelegate.m */,
 				31C640F114D3AF2B007FB1F0 /* ViewController.h */,
@@ -155,6 +162,7 @@
 			files = (
 				31C640EA14D3AF2B007FB1F0 /* InfoPlist.strings in Resources */,
 				31C640F614D3AF2B007FB1F0 /* ViewController.xib in Resources */,
+				31C6410714D3B731007FB1F0 /* test.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +288,7 @@
 				31C640FB14D3AF2B007FB1F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

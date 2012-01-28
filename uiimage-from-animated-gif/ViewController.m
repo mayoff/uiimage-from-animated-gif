@@ -9,8 +9,8 @@
 {
     [super viewDidLoad];
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"gif"];
-    self.dataImageView.image = [UIImage imageWithAnimatedGIFData:[NSData dataWithContentsOfURL:url]];
-    self.urlImageView.image = [UIImage imageWithAnimatedGIFURL:url];
+    self.dataImageView.image = [UIImage imageWithAnimatedGIFData:[NSData dataWithContentsOfURL:url] duration:1];
+    self.urlImageView.image = [UIImage imageWithAnimatedGIFURL:url duration:2];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
