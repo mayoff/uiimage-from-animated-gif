@@ -18,6 +18,7 @@
 		31C640FE14D3AFB1007FB1F0 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C640FD14D3AFB1007FB1F0 /* UIImage+animatedGIF.m */; };
 		31C6410414D3B277007FB1F0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C6410314D3B277007FB1F0 /* ImageIO.framework */; };
 		31C6410714D3B731007FB1F0 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 31C6410614D3B731007FB1F0 /* test.gif */; };
+		31C6410914D3B790007FB1F0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 31C6410814D3B790007FB1F0 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		31C640FD14D3AFB1007FB1F0 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		31C6410314D3B277007FB1F0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		31C6410614D3B731007FB1F0 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
+		31C6410814D3B790007FB1F0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		31C6410A14D3B9D1007FB1F0 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +61,8 @@
 		31C640D014D3AF2B007FB1F0 = {
 			isa = PBXGroup;
 			children = (
-				31C6410314D3B277007FB1F0 /* ImageIO.framework */,
+				31C6410814D3B790007FB1F0 /* README.md */,
+				31C6410A14D3B9D1007FB1F0 /* COPYRIGHT */,
 				31C640E514D3AF2B007FB1F0 /* uiimage-from-animated-gif */,
 				31C640DE14D3AF2B007FB1F0 /* Frameworks */,
 				31C640DC14D3AF2B007FB1F0 /* Products */,
@@ -76,6 +80,7 @@
 		31C640DE14D3AF2B007FB1F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				31C6410314D3B277007FB1F0 /* ImageIO.framework */,
 				31C640DF14D3AF2B007FB1F0 /* UIKit.framework */,
 				31C640E114D3AF2B007FB1F0 /* Foundation.framework */,
 				31C640E314D3AF2B007FB1F0 /* CoreGraphics.framework */,
@@ -163,6 +168,7 @@
 				31C640EA14D3AF2B007FB1F0 /* InfoPlist.strings in Resources */,
 				31C640F614D3AF2B007FB1F0 /* ViewController.xib in Resources */,
 				31C6410714D3B731007FB1F0 /* test.gif in Resources */,
+				31C6410914D3B790007FB1F0 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
