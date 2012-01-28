@@ -15,6 +15,7 @@
 		31C640F014D3AF2B007FB1F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C640EF14D3AF2B007FB1F0 /* AppDelegate.m */; };
 		31C640F314D3AF2B007FB1F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C640F214D3AF2B007FB1F0 /* ViewController.m */; };
 		31C640F614D3AF2B007FB1F0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C640F414D3AF2B007FB1F0 /* ViewController.xib */; };
+		31C640FE14D3AFB1007FB1F0 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C640FD14D3AFB1007FB1F0 /* UIImage+animatedGIF.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		31C640F114D3AF2B007FB1F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		31C640F214D3AF2B007FB1F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		31C640F514D3AF2B007FB1F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		31C640FC14D3AFB1007FB1F0 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		31C640FD14D3AFB1007FB1F0 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				31C640F214D3AF2B007FB1F0 /* ViewController.m */,
 				31C640F414D3AF2B007FB1F0 /* ViewController.xib */,
 				31C640E614D3AF2B007FB1F0 /* Supporting Files */,
+				31C640FC14D3AFB1007FB1F0 /* UIImage+animatedGIF.h */,
+				31C640FD14D3AFB1007FB1F0 /* UIImage+animatedGIF.m */,
 			);
 			path = "uiimage-from-animated-gif";
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				31C640EC14D3AF2B007FB1F0 /* main.m in Sources */,
 				31C640F014D3AF2B007FB1F0 /* AppDelegate.m in Sources */,
 				31C640F314D3AF2B007FB1F0 /* ViewController.m in Sources */,
+				31C640FE14D3AFB1007FB1F0 /* UIImage+animatedGIF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
