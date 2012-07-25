@@ -6,7 +6,7 @@ This method creates an animated `UIImage` using the frames of the GIF loaded fro
 
     +[UIImage animatedImageWithAnimatedGIFURL:(NSURL *)url duration:(NSTimeInterval)duration]
 
-To use this category in your own project, copy `UIImage+animatedGIF.h` and `UIImage+animatedGIF.m` to your project, and add `ImageIO.framework` to the "Link Binary With Libraries" build phase of your target.
+**To use this category in your own project,** copy `UIImage+animatedGIF.h` and `UIImage+animatedGIF.m` to your project, and add `ImageIO.framework` to the "Link Binary With Libraries" build phase of your target.
 
 The implementation of this category is quite simple.  It uses the [Image I/O Framework](http://developer.apple.com/library/ios/#documentation/GraphicsImaging/Conceptual/ImageIOGuide/imageio_intro/ikpg_intro.html) to do all of the real work.
 
