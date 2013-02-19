@@ -2,7 +2,7 @@
 
 @interface UIImage (animatedGIF)
 
-+ (UIImage *)animatedImageWithAnimatedGIFData:(NSData *)data duration:(NSTimeInterval)duration;
-+ (UIImage *)animatedImageWithAnimatedGIFURL:(NSURL *)url duration:(NSTimeInterval)duration;
++ (UIImage *)animatedImageWithAnimatedGIFData:(NSData *)data;
++ (UIImage *)animatedImageWithAnimatedGIFURL:(NSURL *)url;
 
 @end
