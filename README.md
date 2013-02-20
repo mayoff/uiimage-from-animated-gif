@@ -22,7 +22,7 @@ You can build and run the project to see a trivial demo app.
 
 The implementation of this category uses the [Image I/O Framework](http://developer.apple.com/library/ios/#documentation/GraphicsImaging/Conceptual/ImageIOGuide/imageio_intro/ikpg_intro.html) to extract the images and durations from the GIF data.
 
-Diego Peinador provided the inspiration for handling variable-frame-rate animations, although I didn't end up using his code.
+[Diego Peinador](https://github.com/diegopeinador) provided the inspiration for handling variable-frame-rate animations, although I didn't end up using his code.
 
 ## Copyright or lack thereof
 
