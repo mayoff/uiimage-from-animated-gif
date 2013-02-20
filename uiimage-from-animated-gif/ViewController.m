@@ -5,22 +5,19 @@
 @synthesize dataImageView;
 @synthesize urlImageView;
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
+
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"gif"];
-    self.dataImageView.image = [UIImage animatedImageWithAnimatedGIFData:[NSData dataWithContentsOfURL:url] duration:1];
-    self.urlImageView.image = [UIImage animatedImageWithAnimatedGIFURL:url duration:2];
+    self.dataImageView.image = [UIImage animatedImageWithAnimatedGIFData:[NSData dataWithContentsOfURL:url]];
+    self.urlImageView.image = [UIImage animatedImageWithAnimatedGIFURL:url];
+
+    url = [[NSBundle mainBundle] URLForResource:@"variableDuration" withExtension:@"gif"];
+    self.variableDurationImageView.image = [UIImage animatedImageWithAnimatedGIFURL:url];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return interfaceOrientation == UIInterfaceOrientationPortrait;
 }
 
-- (void)viewDidUnload {
-    [self setDataImageView:nil];
-    [self setUrlImageView:nil];
-    [super viewDidUnload];
-}
 @end

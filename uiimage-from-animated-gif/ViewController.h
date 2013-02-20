@@ -2,7 +2,8 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *dataImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *urlImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *dataImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *urlImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *variableDurationImageView;
 
 @end
