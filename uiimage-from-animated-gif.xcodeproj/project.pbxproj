@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		319268E116D44B4200B913B6 /* variableDuration.gif in Resources */ = {isa = PBXBuildFile; fileRef = 319268E016D44B4200B913B6 /* variableDuration.gif */; };
 		31C640E014D3AF2B007FB1F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C640DF14D3AF2B007FB1F0 /* UIKit.framework */; };
 		31C640E214D3AF2B007FB1F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C640E114D3AF2B007FB1F0 /* Foundation.framework */; };
 		31C640E414D3AF2B007FB1F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C640E314D3AF2B007FB1F0 /* CoreGraphics.framework */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		319268E016D44B4200B913B6 /* variableDuration.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = variableDuration.gif; sourceTree = "<group>"; };
 		31C640DB14D3AF2B007FB1F0 /* uiimage-from-animated-gif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uiimage-from-animated-gif.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C640DF14D3AF2B007FB1F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		31C640E114D3AF2B007FB1F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,8 +37,8 @@
 		31C640F114D3AF2B007FB1F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		31C640F214D3AF2B007FB1F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		31C640F514D3AF2B007FB1F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		31C640FC14D3AFB1007FB1F0 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
-		31C640FD14D3AFB1007FB1F0 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		31C640FC14D3AFB1007FB1F0 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+animatedGIF.h"; path = "uiimage-from-animated-gif/UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		31C640FD14D3AFB1007FB1F0 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+animatedGIF.m"; path = "uiimage-from-animated-gif/UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		31C6410314D3B277007FB1F0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		31C6410614D3B731007FB1F0 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 		31C6410814D3B790007FB1F0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -58,12 +60,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		319268E216D44C8200B913B6 /* COPY THESE FILES TO YOUR PROJECT */ = {
+			isa = PBXGroup;
+			children = (
+				31C640FC14D3AFB1007FB1F0 /* UIImage+animatedGIF.h */,
+				31C640FD14D3AFB1007FB1F0 /* UIImage+animatedGIF.m */,
+			);
+			name = "COPY THESE FILES TO YOUR PROJECT";
+			sourceTree = "<group>";
+		};
 		31C640D014D3AF2B007FB1F0 = {
 			isa = PBXGroup;
 			children = (
 				31C6410814D3B790007FB1F0 /* README.md */,
 				31C6410A14D3B9D1007FB1F0 /* COPYRIGHT */,
-				31C640E514D3AF2B007FB1F0 /* uiimage-from-animated-gif */,
+				319268E216D44C8200B913B6 /* COPY THESE FILES TO YOUR PROJECT */,
+				31C640E514D3AF2B007FB1F0 /* test app */,
 				31C640DE14D3AF2B007FB1F0 /* Frameworks */,
 				31C640DC14D3AF2B007FB1F0 /* Products */,
 			);
@@ -88,19 +100,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		31C640E514D3AF2B007FB1F0 /* uiimage-from-animated-gif */ = {
+		31C640E514D3AF2B007FB1F0 /* test app */ = {
 			isa = PBXGroup;
 			children = (
 				31C6410614D3B731007FB1F0 /* test.gif */,
+				319268E016D44B4200B913B6 /* variableDuration.gif */,
 				31C640EE14D3AF2B007FB1F0 /* AppDelegate.h */,
 				31C640EF14D3AF2B007FB1F0 /* AppDelegate.m */,
 				31C640F114D3AF2B007FB1F0 /* ViewController.h */,
 				31C640F214D3AF2B007FB1F0 /* ViewController.m */,
 				31C640F414D3AF2B007FB1F0 /* ViewController.xib */,
 				31C640E614D3AF2B007FB1F0 /* Supporting Files */,
-				31C640FC14D3AFB1007FB1F0 /* UIImage+animatedGIF.h */,
-				31C640FD14D3AFB1007FB1F0 /* UIImage+animatedGIF.m */,
 			);
+			name = "test app";
 			path = "uiimage-from-animated-gif";
 			sourceTree = "<group>";
 		};
@@ -141,7 +153,7 @@
 		31C640D214D3AF2B007FB1F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = 31C640D514D3AF2B007FB1F0 /* Build configuration list for PBXProject "uiimage-from-animated-gif" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -169,6 +181,7 @@
 				31C640F614D3AF2B007FB1F0 /* ViewController.xib in Resources */,
 				31C6410714D3B731007FB1F0 /* test.gif in Resources */,
 				31C6410914D3B790007FB1F0 /* README.md in Resources */,
+				319268E116D44B4200B913B6 /* variableDuration.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +227,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -227,6 +244,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
@@ -239,12 +257,17 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
