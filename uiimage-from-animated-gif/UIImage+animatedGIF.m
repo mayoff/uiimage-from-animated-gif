@@ -93,7 +93,7 @@ static UIImage *animatedImageWithAnimatedGIFImageSource(CGImageSourceRef const s
     return animation;
 }
 
-static UIImage *animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceRef source) {
+static UIImage *animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceRef CF_RELEASES_ARGUMENT source) {
     if (source) {
         UIImage *const image = animatedImageWithAnimatedGIFImageSource(source);
         CFRelease(source);
